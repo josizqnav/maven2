@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>prueba-app</groupId>
-  <artifactId>prueba-app1</artifactId>
-  <version>1-SNAPSHOT</version>
+  <artifactId>7784649S</artifactId>
+  <version>2</version>
   <packaging>jar</packaging>
 
   <name>app</name>
@@ -13,7 +13,20 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+  
+  <dependencies>
+    <groupId>jUnit</groupId>
+    <artifactId>jUnit</artifactId>
+    <version>3.8.1</version>
+    <scout>test</scout>
+  </dependencies>
+  <profile>
+    <id>Mi id</id>
+    <activation>
+      <os>
+        <family>windows</family>
+      </os>
+    </activation>
     <build>
         <plugins>
             <plugin>
@@ -22,5 +35,16 @@
                 <version>6.1.10</version>
             </plugin>
         </plugins>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugi</artifactId>
+                <version>3.3</version>
+                <configuration>
+                 <verbose>true</verbose>
+                </configuration
+            </plugin>
+        </plugins>
     </build>
+  </profile>
 </project>
